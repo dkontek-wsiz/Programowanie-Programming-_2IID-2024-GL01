@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="index.js"></script>
+    <script defer src="validationFunctions.js" ></script>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>Witaj <span id="nameSpan"></span></p>
+    <form novalidate>
+        <label for="name">Imie</label>
+        <input type="text" id="name" name="name">
+        <span id="nameError" class="error"></span>
+        <br/>
+        <label for="surname">Nazwisko</label>
+        <input type="text" id="surname" name="surname">
+        <span id="surnameError" class="error"></span>
+        <br/>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <span id="emailError" class="error"></span>
+        <br/>
+        <label for="password">Haslo</label>
+        <input type="password" id="password" name="password">
+        <input type="checkbox" id="showHidePassword" name="showHidePassword"/>
+        <label for="showHidePassword">Pokaż hasło</label> 
+        <span id="passwordError" class="error"></span>
+        <br/>
+        <label>Płeć</label>
+        <label for="M">M</label>
+        <input type="radio" id="M" name="gender" value="M" />
+        <label for="W">K</label>
+        <input type="radio" id="W" name="gender" value="W" />
+        <span id="genderError" class="error"></span>
+        <br/>
+        <div id="phone-container">
+            <label for="phone">Telefon</label>
+            <input type="text" id="phone" name="phone">
+            <span id="phoneError" class="error"></span>
+        </div>
+        <input type="checkbox" id="showHidePhone" name="showHidePhone"/>
+        <label for="showHidePhone">Pokaż/Ukryj telefon</label> 
+        <br/>
+        <label for="birthDate">Data urodzenia</label>
+        <input type="date" id="birthDate" name="birthDate">
+        <span id="birthDateError" class="error"></span>
+        <br/>
+        <label for="country">Telefon</label>
+        <select id="country" name="country">
+            <option value="PL">Polska</option>
+            <option value="DE">Niemcy</option>
+            <option value="FR">Francja</option>
+        </select>
+        <span id="countryError" class="error"></span>
+        <br/>
+        <label>Hobby</label>
+        <br/>
+        <label>Piłka nożna</label>
+        <input value="Piłka nożna" 
+        type="checkbox" 
+        name="hobbies"/>
+        <label>Siatkówka</label>
+        <input value="Siatkówka" 
+        type="checkbox" 
+        name="hobbies"/>
+        <br/>
+        <input type="submit" value="Wyślij"/>
+        <button type="submit">Wyślij <b>Test</b></button>
+    </form>
+
+    <ul>
+        
+    </ul>
+</body>
+</html>
